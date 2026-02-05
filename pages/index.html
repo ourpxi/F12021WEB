@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red Bull Racing | F1 2021</title>
+    <title>F1 2021</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/global.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/themes.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/themes.css">
 </head>
-<body class="theme-redbull">
-
+<body>
 <header>
     <div class="header-left">
         <a href="/pages/index.html">
@@ -154,84 +153,87 @@
     <div class="header-right"></div>
 </header>
 
-    <main class="snap-container">
+<main class="snap-container">
+    
+    <section id="hero" class="section-hero">
+        <div class="card-md3 card-glass-light">
+            <h1 class="hero-title">F1 2021</h1>
+            <p>Donde la gloria se decidió en la última vuelta. Revive el duelo de titanes entre Hamilton y Verstappen que cambió la historia.</p>
+            <a href="#campeon" class="btn-md3">EXPLORAR TEMPORADA</a>
+        </div>
+    </section>
+
+    <section id="campeon" class="section-hero" style="background: linear-gradient(#000000b3, #0000002f), url('/img/background/redbull.jpg') center/cover;">
+        <div class="profile-layout">
+            <img src="/img/drivers/verstappen_inspyrenet.png" alt="Max Verstappen" class="img-xl">
+            <div class="profile-info">
+                <h2 class="section-subtitle">THE <br> WORLD CHAMPION</h2>
+                <h3 class="section-title" style="color: var(--f1-red);">Max Verstappen</h3>
+                <div class="card-md3 card-team">
+                    <p>
+                        Dududu Max Verstappen.
+                    </p>
+                    <a href="/pages/scuderias/red-bull.html" class="btn-md3">VER ESTADÍSTICAS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clasificacion" class="section-hero" style="background: linear-gradient(#000000b3, #0000002f), url('/img/background/lewis1.jpg') center/cover;">
+        <div class="card-md3 card-glass-light">
+            <h2 class="section-title">CLASIFICACIÓN <br> FINAL</h2>
+            <p>La temporada más ajustada de la era híbrida. Consulta los puntos finales que consagraron a los mejores del 2021.</p>
+            <a href="/pages/races/calendario.html" class="btn-md3">CONSULTAR TABLA</a>
+        </div>
+    </section>
+
+    <footer class="main-footer snap-section">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <img src="/img/icons/f1.png" class="logo-f1" alt="F1 Logo">
+            <div style="width: 2px; height: 50px; background: #ffffff33;"></div>
+            <img src="/img/icons/udb_logo.png" class="logo-udb" alt="UDB Logo">
+        </div>
+        <h2 style="font-size: 24px; font-weight: 900; letter-spacing: -1px;">PROYECTO LME <span style="color: var(--f1-red);">2026</span></h2>
+    </div>
+
+    <div class="footer-grid">
+        <div class="footer-column">
+            <h4>DESARROLLADORES</h4>
+            <ul class="nav-lvl-3">
+                <li class="dev-team">Michael (Lead Dev)</li>
+                <li class="dev-team">Naomi (Content Manager)</li>
+                <li class="dev-team">Ivania (Layout Specialist)</li>
+                <li class="dev-team">Kath (Database & Routes)</li>
+            </ul>
+        </div>
         
-        <section id="scuderia-hero" class="section-hero" style="background-image: linear-gradient(#000000b3, #0000002f), url('../../img/repo/redbull2.jpg');">
-            <div class="card-md3 card-glass-light">
-                <h1 class="hero-title">RED BULL <br> RACING</h1>
-                <p>Energía, innovación y una sed insaciable de victoria. En 2021, Red Bull desafió el dominio absoluto de la era híbrida para devolver el número 1 a Milton Keynes.</p>
-                <a href="#rb16b" class="btn-md3">EL MONOPLAZA</a>
-            </div>
-        </section>
+        <div class="footer-column">
+            <h4>NAVEGACIÓN</h4>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/races/calendario.html">Calendario 2021</a></li>
+                <li><a href="/pages/galeria.html">Galería Multimedia</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
 
-        <section id="rb16b" class="section-hero" style="background: linear-gradient(#000000b3, #0000002f), url('../../img/repo/rb16b.jpg') center/cover;">
-            <div class="profile-layout">
-                <div class="profile-info">
-                    <h1 class="hero-title">RB16B</h1>
-                    <div class="card-md3 card-f1-accent">
-                        <p>Diseñado por Adrian Newey, el RB16B fue la evolución perfecta. Con un motor Honda afinado al límite, demostró ser el coche más equilibrado del trazado.</p>
-                        <a href="#verstappen" class="btn-md3">CONOCER PILOTOS</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="footer-column">
+            <h4>UNIVERSIDAD</h4>
+            <p style="color: var(--f1-silver); line-height: 1.6;">
+                Universidad Don Bosco, El Salvador.<br>
+                Técnico en Ciencias de la Computación.<br>
+                Lenguajes de Marcado de Estructuras.
+            </p>
+        </div>
+    </div>
 
-        <section id="verstappen" class="section-dark" style="background: linear-gradient(#000000b3, #0000002f), url('../../img/repo/max1.jpg') center/cover;">
-            <div class="profile-layout">
-                <img src="../../img/drivers/verstappen_inspyrenet.png" alt="Max Verstappen" class="img-glass">
-                <div class="profile-info">
-                    <h1 class="hero-title">MAX <br> VERSTAPPEN</h1>
-                    <div class="card-md3 card-team">
-                        <p>Agresividad pura y talento generacional. "Mad Max" no solo compitió contra el mejor de la historia, sino que lo venció en un duelo épico.</p>
-                        <a href="#perez" class="btn-md3">SIGUIENTE PILOTO</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="footer-bottom">
+        <p>© 2026 Michael & Team. Este sitio es un proyecto académico sin fines de lucro.</p>
+    </div>
+    </footer>
+</main>
 
-        <section id="perez" class="section-dark" style="background: linear-gradient(#000000b3, #0000002f), url('../../img/repo/checo1.jpg') center/cover;">
-            <div class="profile-layout">
-                <div class="profile-info">
-                    <h1 class="hero-title">SERGIO <br> PÉREZ</h1>
-                    <div class="card-md3 card-team">
-                        <p>El "Ministro de Defensa". Su llegada a Red Bull fue clave para asegurar el campeonato de pilotos, demostrando un compañerismo y defensa legendarios.</p>
-                        <a href="#footer" class="btn-md3">VER EQUIPO</a>
-                    </div>
-                </div>
-                <img src="../../img/drivers/perez_inspyrenet.png" alt="Sergio Pérez" class="img-glass">
-            </div>
-        </section>
-
-        <footer id="footer" class="main-footer">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <img src="../../img/icons/f1.png" class="logo-f1" alt="F1 Logo">
-                    <div style="width: 2px; height: 50px; background: #ffffff33;"></div>
-                    <img src="../../img/icons/udb_logo.png" class="logo-udb" alt="UDB Logo">
-                </div>
-                <h2 style="font-size: 24px; font-weight: 900;">SCUDERIA <span style="color: var(--f1-red);">RED BULL</span></h2>
-            </div>
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h4>DESARROLLADORES</h4>
-                    <ul class="nav-lvl-3">
-                        <li style="color: white; font-weight: 700;">Michael</li>
-                        <li style="color: white; font-weight: 700;">Naomi</li>
-                        <li style="color: white; font-weight: 700;">Ivania</li>
-                        <li style="color: white; font-weight: 700;">Kath</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>ESCUDERÍA</h4>
-                    <p style="color: #cccccc;">Sede: Milton Keynes, Reino Unido<br>Motor: Honda RA621H<br>Puntos 2021: 585.5</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 - Universidad Don Bosco - Proyecto LME</p>
-            </div>
-        </footer>
-
-    </main>
 
 </body>
 </html>

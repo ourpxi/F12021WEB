@@ -13,10 +13,10 @@
     --md-surface-variant: var(--f1-carbon);
     --md-primary: var(--f1-red);
     
-    --rb-primary: #0600ef;
+    --rb-primary: #7c1301;
     --rb-on-primary: #ffffff;
-    --rb-container: #dce1ff;
-    --rb-on-container: #00156e;
+    --rb-container: #1f1f27;
+    --rb-on-container: #fefefe;
 
 
 .theme-redbull {

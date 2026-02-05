@@ -71,3 +71,102 @@
     line-height: 36px;
     margin-bottom: 48px;
 }
+
+/* Tarjeta Clara con efecto Vidrio */
+.card-glass-light {
+    backdrop-filter: blur(5px);
+    color: var(--f1-silver);
+    border: 1px solid #ffffff33;  /* Borde sutil de cristal */
+
+}
+
+
+
+/* Tarjeta Global con acento F1 */
+.card-f1-accent {
+    background-color: var(--f1-carbon);
+    border-bottom: 8px solid var(--f1-red);
+    box-shadow: 0px 15px 40px #00000099;
+}
+
+.img-glass {
+    backdrop-filter: blur(20px);  /* Efecto de desenfoque */
+    width: 550px;                 /* Tamaño estandarizado */
+    height: 733px;                /* Proporción 3:4 */
+    border-radius: 40px;          /* Bordes redondeados MD3 */
+    object-fit: cover;          /* Evita que la imagen se deforme */
+    box-shadow: 0px 20px 40px #00000080; /* Sombra profunda */
+    border: 1px solid #ffffff33;  /* Borde sutil de cristal */
+}
+
+.img-xl {
+    width: 550px;
+    height: 733px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 0px 20px 40px #00000080;
+    backdrop-filter: blur(20px); 
+}
+
+.img-glass-horizontal {
+    backdrop-filter: blur(20px);
+    width: 550px;
+    height: 275px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 0px 20px 40px #00000080;
+    border: 1px solid #ffffff33;
+}
+
+/* --- GRID DE ESTADÍSTICAS --- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.stat-card {
+    background-color: #ffffff1a; /* Blanco muy traslúcido */
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid #ffffff33;
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--f1-red);
+}
+
+.stat-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--f1-white);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 24px;
+    transition: var(--transition);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    border-color: var(--f1-red);
+}

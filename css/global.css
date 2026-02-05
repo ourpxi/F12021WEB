@@ -146,53 +146,14 @@ header {
 
 /* Fondo hero con degradado oscuro para legibilidad */
 .section-hero {
-    background: linear-gradient(#000000b3, #000000b3), url('../img/background/hero.jpg') center/cover;
+    background: linear-gradient(#000000b3, #0000002f), url('../img/background/hero.jpg') center/cover;
 }
 
 /* Layout de perfil (Imagen + Info) */
 .profile-layout { display: flex; align-items: center; gap: 100px; max-width: 1400px; }
 
-/* Imagenenes de pilotos */
-.img-xl {
 
-    width: 550px;
-    height: 733px;
-    border-radius: 40px;
-    object-fit: cover;
-    box-shadow: 0px 20px 40px #00000080;
-    backdrop-filter: blur(20px); 
-}
 
-/* Tarjeta estilo Material Design 3 */
-.card-md3 {
-    background-color: var(--md-container);
-    border-radius: 40px;
-    padding: 60px;
-    max-width: 800px;
-}
-
-/* --- VARIANTES DE TARJETAS MD3 --- */
-
-/* Tarjeta Clara con efecto Vidrio (Para el Hero) */
-.card-glass-light {
-    background-color: #fffffff2; /* Blanco con 80% opacidad */
-    backdrop-filter: blur(15px);
-    color: var(--f1-silver);
-}
-
-/* Tarjeta temática para Escuderías (Usa variables de themes.css) */
-.card-team {
-    background-color: var(--md-container);
-    color: var(--f1-dark);
-    border-left: 8px solid var(--md-primary);
-}
-
-/* Tarjeta Global con acento F1 */
-.card-f1-accent {
-    background-color: var(--f1-carbon);
-    border-bottom: 8px solid var(--f1-red);
-    box-shadow: 0px 15px 40px #00000099;
-}
 
 /* --- VARIANTES DE SECCIONES --- */
 
@@ -208,26 +169,8 @@ header {
 }
 
 /* Tipografía */
-.hero-title { font-size: 110px; line-height: 100px; font-weight: 900; margin-bottom: 40px; text-transform: uppercase; }
-.section-title { font-size: 80px; line-height: 85px; margin-bottom: 32px; text-transform: uppercase; }
+.section-subtitle { font-size: 60px; line-height: 55px; margin-bottom: 16px; text-transform: uppercase; }
 
-/* Párrafos legibles dentro de tarjetas */
-.card-md3 p { font-size: 24px; line-height: 36px; margin-bottom: 48px; }
-
-/* Botón MD3 */
-.btn-md3 {
-    background-color: var(--md-primary);
-    color: var(--f1-white);
-    padding: 20px 48px;
-    border-radius: 100px;
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-    display: inline-block;
-}
-
-.btn-md3:hover { transform: scale(1.05); }
 
 /* --- FOOTER XL --- */
 
