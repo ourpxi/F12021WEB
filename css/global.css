@@ -146,7 +146,7 @@ header {
 
 /* Fondo hero con degradado oscuro para legibilidad */
 .section-hero {
-    background: linear-gradient(#000000b3, #0000002f), url('../img/background/hero.jpg') center/cover;
+    background: linear-gradient(#000000b3, #0000002f), url('../img/repo/hero.jpg') center/cover;
 }
 
 /* Layout de perfil (Imagen + Info) */
