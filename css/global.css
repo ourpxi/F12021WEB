@@ -1,32 +1,14 @@
-:root {
-    /* Colores Identidad F1 */
-    --f1-red: #e10600;
-    --f1-red-50: #e1060080;
-    --f1-dark: #15151e;
-    --f1-dark-98: #15151efa;
-    --f1-carbon: #1f1f27;
-    --f1-white: #ffffff;
-    --f1-silver: #f3f3f3;
-
-    /* MD3 */
-    --md-surface: var(--f1-dark);
-    --md-container: var(--f1-carbon);
-    --md-primary: var(--f1-red);
-    --transition: all 0.3s ease;
-}
-
-/* --- 2. RESET Y BASES (global.css) --- */
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box; /* Asegura que padding no sume al ancho total */
+    box-sizing: border-box; 
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--f1-dark);
     color: var(--f1-white);
-    overflow: hidden; /* Evita scrollbars dobles con el snap-container */
+    overflow: hidden;
 }
 
 /* Contenedor principal con efecto de desplazamiento Apple/Snap */
@@ -161,22 +143,15 @@ header {
     background-color: var(--f1-dark);
 }
 
-.section-dark-alt {
-    background-color: var(--f1-carbon);
-    /* Imagen de fondo sutil opcional para la clasificación */
-    background-image: linear-gradient(var(--f1-dark-98), var(--f1-dark-98)), url('../img/background/finish-line.jpg');
-    background-size: cover;
-}
-
 /* Tipografía */
 .section-subtitle { font-size: 60px; line-height: 55px; margin-bottom: 16px; text-transform: uppercase; }
 
 
-/* --- FOOTER XL --- */
+/* --- FOOTER --- */
 
 .main-footer {
     background-color: var(--f1-dark);
-    border-top: 8px solid var(--f1-red); /* Acento característico */
+    border-top: 8px solid var(--f1-red);
     padding: 100px 80px 40px 80px;
     color: var(--f1-white);
     display: flex;
@@ -199,8 +174,7 @@ header {
 }
 
 .logo-udb {
-    height: 80px; /* Logo de la universidad con presencia */
-    filter: brightness(0) invert(1); /* Lo hacemos blanco para que combine */
+    height: 80px; 
 }
 
 .footer-grid {
@@ -250,7 +224,7 @@ header {
     color: var(--f1-white);
 }
 
-/* --- 6. ANIMACIONES --- */
+/* --- ANIMACIONES --- */
 @keyframes slideDown {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0px); }
