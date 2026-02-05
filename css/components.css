@@ -1,0 +1,73 @@
+.card-md3 {
+    background-color: var(--md-sys-color-surface-variant);
+    border-radius: 40px;
+    padding: 60px;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+}
+
+.hero-title {
+    font-size: 110px;
+    line-height: 100px;
+    letter-spacing: -2px;
+    margin-bottom: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 72px;
+    line-height: 80px;
+    margin-bottom: 32px;
+}
+
+.card-md3 p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 48px;
+    color: var(--md-on-surface);
+}
+
+.btn-md3 {
+    background-color: var(--md-primary);
+    color: #ffffff;
+    padding: 20px 48px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    width: max-content;
+    transition: transform 0.2s ease;
+}
+
+.btn-md3:hover {
+    transform: scale(1.05);
+}
+
+.card-team {
+    background-color: var(--md-container);
+    color: var(--md-on-container);
+    
+    border-radius: 40px;
+    padding: 60px;
+    max-width: 800px;
+    
+    border-left: 12px solid var(--md-primary); 
+    
+    box-shadow: 0px 30px 60px #000000cc; 
+    
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.card-team p {
+    color: inherit; 
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 48px;
+}
