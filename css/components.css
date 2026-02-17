@@ -79,17 +79,12 @@
 /* Tarjeta con efecto cristal translúcido blur */
 .card-glass-light {
     backdrop-filter: blur(5px);
-    color: var(--f1-silver);
+    color: var(--f1-white);
     border: 1px solid #ffffff33;
+    background-color: #00000050; 
 
 }
 
-/* Tarjeta de acento F1 con borde rojo inferior */
-.card-f1-accent {
-    background-color: var(--f1-carbon);
-    border-bottom: 8px solid var(--f1-red);
-    box-shadow: 0px 15px 40px #00000099;
-}
 
 /* Imagen con efecto cristal - vertical */
 .img-glass {
