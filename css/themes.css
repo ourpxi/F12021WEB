@@ -30,4 +30,9 @@
     --md-container: var(--mercedes-container);
     --md-on-container: var(--mercedes-on-container);
 }
+.theme-ferrari {
+    --md-primary: var(--ferrari-primary);
+    --md-container: var(--ferrari-container);
+    --md-on-container: var(--ferrari-on-container);
+}
 }
