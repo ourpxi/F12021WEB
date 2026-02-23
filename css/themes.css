@@ -24,15 +24,60 @@
     --md-container: var(--rb-container);
     --md-on-container: var(--rb-on-container);
 }
-
 .theme-mercedes {
-    --md-primary: var(--mercedes-primary);
-    --md-container: var(--mercedes-container);
-    --md-on-container: var(--mercedes-on-container);
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container);  
 }
-.theme-ferrari {
-    --md-primary: var(--ferrari-primary);
-    --md-container: var(--ferrari-container);
-    --md-on-container: var(--ferrari-on-container);
+.theme-ferrari{
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+.theme-mclaren {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-alpine {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-alpha-tauri {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-ferrari{
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-aston-martin {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+.theme-williams {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-alfa-romeo {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-haas {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
 }
 }
