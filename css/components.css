@@ -177,6 +177,7 @@
 .gallery-item:hover {
     transform: scale(1.03);
     border-color: var(--f1-red);
+<<<<<<< HEAD
 }
 
 
@@ -326,4 +327,6 @@ input[type="submit"]:hover{
         flex-direction:column;
         align-items:center;
     }
+=======
+>>>>>>> 5a5b653501e38935dfe71ad328a286cd511013cd
 }
