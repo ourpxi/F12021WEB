@@ -1,0 +1,180 @@
+/* Tarjeta default */
+.card-md3 {
+    background-color: var(--md-sys-color-surface-variant);
+    border-radius: 40px;
+    padding: 60px;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Título hero grande */
+.hero-title {
+    font-size: 110px;
+    line-height: 100px;
+    letter-spacing: -2px;
+    margin-bottom: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Título de sección */
+.section-title {
+    font-size: 72px;
+    line-height: 80px;
+    margin-bottom: 32px;
+}
+
+/* Párrafos dentro de tarjetas */
+.card-md3 p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 48px;
+    color: var(--md-on-surface);
+}
+
+/* Botones*/
+.btn-md3 {
+    background-color: var(--md-primary);
+    color: #ffffff;
+    padding: 20px 48px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    width: max-content;
+    transition: transform 0.2s ease;
+}
+
+/* Efecto hover del botón */
+.btn-md3:hover {
+    transform: scale(1.05);
+}
+
+/* Tarjeta de equipo con borde izquierdo grueso y sombra profunda */
+.card-team {
+    background-color: var(--md-container);
+    color: var(--md-on-container);
+    border-radius: 40px;
+    padding: 60px;
+    max-width: 800px;
+    border-left: 12px solid var(--md-primary); 
+    box-shadow: 0px 30px 60px #000000cc; 
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Párrafos dentro de tarjetas de equipo con estilos heredados */
+.card-team p {
+    color: inherit; 
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 48px;
+}
+
+/* Tarjeta con efecto cristal translúcido blur */
+.card-glass-light {
+    backdrop-filter: blur(5px);
+    color: var(--f1-white);
+    border: 1px solid #ffffff33;
+    background-color: #00000050; 
+
+}
+
+
+/* Imagen con efecto cristal - vertical */
+.img-glass {
+    backdrop-filter: blur(5px);
+    width: 550px;
+    height: 733px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 0px 20px 40px #00000080;
+    border: 1px solo #ffffff33; 
+}
+
+/* Imagen extra grande con blur */
+.img-xl {
+    width: 550px;
+    height: 733px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 0px 20px 40px #00000080;
+    backdrop-filter: blur(5px); 
+    border: 1px solid #ffffff33;
+
+}
+
+/* Imagen horizontal con efecto cristal */
+.img-glass-horizontal {
+    backdrop-filter: blur(5px);
+    width: 550px;
+    height: 275px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 0px 20px 40px #00000080;
+    border: 1px solid #ffffff33;
+}
+
+/* Grid de dos columnas para mostrar estadísticas */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+/* Tarjeta individual para estadística con fondo translúcido */
+.stat-card {
+    background-color: #ffffff1a; 
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid #ffffff33;
+    text-align: center;
+}
+
+/* Número grande de la estadística en color rojo F1 */
+.stat-number {
+    display: block;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--f1-red);
+}
+
+/* Etiqueta descriptiva de la estadística en mayúsculas */
+.stat-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--f1-white);
+}
+
+/* Grid de tres columnas para galería de fotos */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Elemento individual de galería con bordes y transición */
+.gallery-item {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 24px;
+    transition: var(--transition);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+/* Efecto hover de galería - escala y borde rojo */
+.gallery-item:hover {
+    transform: scale(1.03);
+    border-color: var(--f1-red);
+}

@@ -1,0 +1,232 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--f1-dark);
+    color: var(--f1-white);
+    overflow: hidden;
+}
+
+/* Contenedor principal con efecto de desplazamiento Apple/Snap */
+.snap-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* Secciones de pantalla completa */
+section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 5vw 80px 5vw;
+    position: relative;
+}
+
+/* --- 3. NAVEGACIÓN Y MEGA MENÚ --- */
+
+/* Cabecera con efecto de cristal esmerilado */
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px; 
+    z-index: 9999;
+    background-color: var(--f1-dark-98); 
+    backdrop-filter: blur(20px);
+    border-bottom: 4px solid var(--f1-red);
+    display: flex;
+    align-items: center;
+    padding: 0px 80px;
+    pointer-events: auto; 
+    
+}
+
+.snap-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Distribución del header en 3 bloques para centrado perfecto */
+.header-left, .header-right { flex: 1; display: flex; align-items: center; }
+.header-center { flex: 2; display: flex; justify-content: center; }
+
+/* Logo con respuesta visual al hover */
+.logo-f1 { height: 45px; transition: var(--transition); }
+.logo-f1:hover { transform: scale(1.05); }
+
+/* Lista principal de navegación */
+.nav-lvl-1 { display: flex; list-style: none; gap: 50px; }
+.nav-lvl-1 > li { height: 100px; display: flex; align-items: center;}
+
+/* Estilo de los links principales (L1) */
+.nav-lvl-1 a {
+    text-decoration: none;
+    color: var(--f1-white);
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+/* Efecto de brillo en hover */
+.nav-lvl-1 a:hover { color: var(--f1-red); text-shadow: 0px 0px 12px var(--f1-red-50); }
+
+/* Contenedor Menu (L2)*/
+.nav-lvl-2 {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    background-color: var(--f1-carbon);
+    padding: 60px 80px;
+    border-bottom: 8px solid var(--f1-red);
+    box-shadow: 0px 20px 40px #00000080;
+    animation: slideDown 0.3s ease-out;
+}
+
+/* Desplegar Menu */
+.has-mega:hover > .nav-lvl-2 { display: flex; justify-content: center; }
+
+/* Columnas de información dentro del  Menú (L3) */
+.mega-menu-content { display: flex; flex-direction: row; justify-content: space-between; gap: 80px; max-width: 1400px; width: 100%; }
+.mega-column { flex: 1; }
+
+/* Títulos de categorías en el submenú */
+.mega-column h3 {
+    color: var(--f1-red);
+    font-size: 18px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--f1-red-50);
+    padding-bottom: 8px;
+}
+
+/* Links del Nivel 3 dek menu */
+.nav-lvl-3 { list-style: none; }
+.nav-lvl-3 li a {
+    color: var(--f1-silver) !important;
+    font-size: 18px !important;
+    text-transform: none !important;
+    font-weight: 400 !important;
+    padding: 8px 0px !important;
+    display: block;
+}
+
+/* Hover con desplazamiento lateral en submenús */
+.nav-lvl-3 li a:hover { padding-left: 10px !important; text-shadow: none !important; }
+
+/* --- 4. COMPONENTES Y VISUALES  (components.css) --- */
+
+/* Fondo hero con degradado oscuro para legibilidad */
+.section-hero {
+    background: linear-gradient(#000000b3, #0000002f), url('../img/repo/hero.jpg') center/cover;
+}
+
+/* Layout de perfil (Imagen + Info) */
+.profile-layout { display: flex; align-items: center; gap: 100px; max-width: 1400px; }
+
+
+
+
+/* --- VARIANTES DE SECCIONES --- */
+
+.section-dark {
+    background-color: var(--f1-dark);
+}
+
+/* Tipografía */
+.section-subtitle { font-size: 60px; line-height: 55px; margin-bottom: 16px; text-transform: uppercase; }
+
+
+/* --- FOOTER --- */
+
+.main-footer {
+    background-color: var(--f1-dark);
+    border-top: 8px solid var(--f1-red);
+    padding: 100px 80px 40px 80px;
+    color: var(--f1-white);
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff33;
+    padding-bottom: 40px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo-udb {
+    height: 80px; 
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.footer-column h4 {
+    color: var(--f1-red);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: var(--f1-silver);
+    text-decoration: none;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.footer-column ul li a:hover {
+    color: var(--f1-red);
+    padding-left: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ffffff1a;
+    padding-top: 40px;
+    font-size: 14px;
+    color: #888888;
+}
+
+.dev-team {
+    font-weight: 700;
+    color: var(--f1-white);
+}
+
+/* --- ANIMACIONES --- */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0px); }
+}
+
