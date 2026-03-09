@@ -1,0 +1,83 @@
+:root {
+    --f1-red: #e10600;
+    --f1-dark: #15151e;
+    --f1-carbon: #1f1f27;
+    --f1-white: #ffffff;
+    --f1-silver: #f3f3f3;
+
+    --f1-dark-98: #15151efa;
+    --f1-red-50: #e1060080; 
+    
+    --md-surface: var(--f1-dark);
+    --md-on-surface: var(--f1-white);
+    --md-surface-variant: var(--f1-carbon);
+    --md-primary: var(--f1-red);
+    
+    --rb-primary: #7c1301;
+    --rb-on-primary: #ffffff;
+    --rb-container: #1f1f27;
+    --rb-on-container: #fefefe;
+
+
+.theme-redbull {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container);
+}
+.theme-mercedes {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container);  
+}
+.theme-ferrari{
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+.theme-mclaren {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-alpine {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-alpha-tauri {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-ferrari{
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-aston-martin {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+.theme-williams {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-alfa-romeo {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+
+.theme-haas {
+    --md-primary: var(--rb-primary);
+    --md-container: var(--rb-container);
+    --md-on-container: var(--rb-on-container); 
+}
+}
