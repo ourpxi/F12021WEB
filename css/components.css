@@ -177,4 +177,70 @@
 .gallery-item:hover {
     transform: scale(1.03);
     border-color: var(--f1-red);
+<<<<<<< HEAD
 }
+=======
+    
+}
+
+
+/*KATY PARTE FORMULARIO*/
+
+form{
+    width: 420px;
+    margin: 40px auto;
+    padding: 25px;
+    background: var(--md-surface-variant);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    font-family: 'Roboto', sans-serif;
+    color: var(--md-on-surface);
+}
+
+/* labels */
+
+label{
+    font-weight: 500;
+    color: var(--md-on-surface);
+}
+
+/* inputs y textarea */
+
+input,
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid var(--md-primary);
+    background: var(--md-surface);
+    color: var(--md-on-surface);
+    font-size: 14px;
+}
+
+/* focus */
+
+input:focus,
+textarea:focus{
+    outline: none;
+    border: 2px solid var(--md-primary);
+}
+
+/* botón */
+
+input[type="submit"]{
+    background: var(--md-primary);
+    color: var(--f1-white);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* hover botón */
+
+input[type="submit"]:hover{
+    opacity: 0.9;
+}
+
+>>>>>>> 6a1b4a226711f00aa4039ee81c1f5af4191235f8

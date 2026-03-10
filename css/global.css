@@ -11,7 +11,11 @@ body {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 /* Contenedor principal con efecto de desplazamiento Apple/Snap */
+=======
+/* Contenedor principal con efecto de desplazamiento Snap */
+>>>>>>> 6a1b4a226711f00aa4039ee81c1f5af4191235f8
 .snap-container {
     height: 100vh;
     overflow-y: scroll;
@@ -134,9 +138,12 @@ header {
 /* Layout de perfil (Imagen + Info) */
 .profile-layout { display: flex; align-items: center; gap: 100px; max-width: 1400px; }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 6a1b4a226711f00aa4039ee81c1f5af4191235f8
 /* --- VARIANTES DE SECCIONES --- */
 
 .section-dark {
