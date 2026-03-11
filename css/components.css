@@ -177,10 +177,6 @@
 .gallery-item:hover {
     transform: scale(1.03);
     border-color: var(--f1-red);
-<<<<<<< HEAD
-}
-=======
-    
 }
 
 
@@ -243,4 +239,3 @@ input[type="submit"]:hover{
     opacity: 0.9;
 }
 
->>>>>>> 6a1b4a226711f00aa4039ee81c1f5af4191235f8

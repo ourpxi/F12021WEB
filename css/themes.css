@@ -24,15 +24,6 @@
     --md-container: var(--rb-container);
     --md-on-container: var(--rb-on-container);
 }
-<<<<<<< HEAD
-
-.theme-mercedes {
-    --md-primary: var(--rb-primary);
-    --md-container: var(--mercedes-container);
-    --md-on-container: var(--mercedes-on-container);
-}
-}
-=======
 .theme-mercedes {
     --md-primary: var(--rb-primary);
     --md-container: var(--rb-container);
@@ -90,4 +81,3 @@
     --md-on-container: var(--rb-on-container); 
 }
 }
->>>>>>> 6a1b4a226711f00aa4039ee81c1f5af4191235f8
