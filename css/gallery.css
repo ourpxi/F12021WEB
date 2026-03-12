@@ -1,9 +1,10 @@
+
 /* Fondo general */
 .gallery-wrapper {
     background: linear-gradient(to right, #0c0c14, #15151e);
     padding: 100px 40px;
     font-family: 'Titillium Web', sans-serif;
-}
+    }
 
 /* Título */
 .gallery-title {
