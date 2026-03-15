@@ -2,79 +2,76 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería Multimedia | F1 2021</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/themes.css">
+    <title>F1 2021 Simple</title>
     <link rel="stylesheet" href="../css/gallery.css">
-
-
- 
 </head>
 <body>
-    <header>
-        <img src="../img/icons/f1.png" alt="f1 logo" width="120">
-    <nav>
-        <ul class="nav-lvl-1">
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./pilotos.html">PILOTOS</a></li>
-            <li><a href="escuderias.html">ESCUDERÍAS</a></li>
-            <li><a href="carreras.html">CARRERAS</a></li>
-            <li><a href="gallery.html" class="active">GALERÍA</a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-        </ul>
-    </nav>
-</header>
+     <header>
+     <nav class="navbar">
+    
+    <a href="#" class="logo">
+        <img src="../img/icons/f1.png" alt="F1 Logo">
+    </a>
 
-    <main class="gallery-wrapper">
-            <div class="gallery-title">
-                <h1>MOMENTOS <span class="red-text">2021</span></h1>
-                <p>La velocidad capturada en imágenes.</p>
-            </div>
+    <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#pilotos">Pilotos</a></li>
+        <li><a href="#escuderias">Escuderías</a></li>
+        <li><a href="#carreras">Carreras</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
 
-            <div class="f1-gallery">
-                <div class="photo-card tall">
-                    <img src="../img/repo/max1.jpg" alt="Max Campeón">
-                    <div class="info"><span>Abu Dhabi GP</span></div>
-                </div>
+       </nav>
+    </header>
 
-                <div class="photo-card">
-                    <img src="../img/repo/lewis1.jpg" alt="Lewis Hamilton">
-                    <div class="info"><span>Lewis Hamilton</span></div>
-                </div>
+    <div class="contenedor-galeria">
 
-                <div class="photo-card wide">
-                    <img src="../img/repo/bahrain2.jpg" alt="Circuito Bahrain">
-                    <div class="info"><span>Luces de Bahréin</span></div>
-                </div>
+    <div class="tarjeta">
+        <img src="../img/drivers/verstappen_inspyrenet.png" alt="Max Verstappen">
+        <h3>Max Verstappen</h3>
+        <p>El León Holandés. En 2021 logró 10 victorias y se coronó Campeón del Mundo por primera vez en una definición de infarto.</p>
+    </div>
 
-                <div class="photo-card">
-                    <img src="../img/repo/checo1.jpg" alt="Checo Perez">
-                    <div class="info"><span>Sergio Pérez</span></div>
-                </div>
+    <div class="tarjeta">
+        <img src="../img/drivers/hamilton_inspyrenet.png" alt="Lewis Hamilton">
+        <h3>Lewis Hamilton</h3>
+        <p>El 7 veces campeón. Ganó carreras épicas como Brasil 2021 y llevó la pelea hasta la última vuelta del último Gran Premio.</p>
+    </div>
 
-                <div class="photo-card tall">
-                    <img src="../img/repo/max8.jpg" alt="Max Niñez">
-                    <div class="info"><span>El inicio de Max</span></div>
-                </div>
+    <div class="tarjeta">
+        <img src="../img/cars/rb16b.png" alt="Coche Red Bull 2021">
+        <h3>Red Bull RB16B</h3>
+        <p>El coche diseñado por Adrian Newey que rompió el dominio de Mercedes. Con motor Honda, fue la máquina perfecta para Max.</p>
+    </div>
 
-                <div class="photo-card">
-                    <img src="../img/repo/redbull1.jpg" alt="Red Bull">
-                    <div class="info"><span>Team Red Bull</span></div>
-                </div>
-            </div>
-      
-    </main>
+    <div class="tarjeta">
+        <img src="../img/w12" alt="Coche Mercedes 2021">
+        <h3>Mercedes W12</h3>
+        <p>La "Flecha Negra". Un coche increíblemente rápido que permitió a Mercedes ganar el Mundial de Constructores 2021.</p>
+    </div>
 
-      <footer class="main-footer">
-    <div class= "footer-top">
+    <div class="tarjeta">
+        <img src="../img/icons/redbull.png" alt="Escudo Red Bull">
+        <h3>Red Bull Racing</h3>
+        <p>Escudería con sede en Milton Keynes. En 2021 volvieron a la cima del mundo tras años de lucha contra el dominio alemán.</p>
+    </div>
+
+    <div class="tarjeta">
+        <img src="../img/icons/mercedes.png" alt="Escudo Mercedes">
+        <h3>Mercedes-AMG F1</h3>
+        <p>El equipo más dominante de la era híbrida. En 2021 consiguieron su octavo título de constructores consecutivo.</p>
+    </div>
+
+</div>
+
+    
+    <section>
+    <footer class="main-footer snap-section">
+    <div class="footer-top">
         <div class="footer-brand">
-            <img src="/img/icons/f1.png" class="logo-f1" alt="F1 Logo">
+            <img src="../img/icons/f1.png" class="logo-f1" alt="F1 Logo">
             <div style="width: 2px; height: 50px; background: #ffffff33;"></div>
-            <img src="/img/icons/udb_logo.png" class="logo" alt="logo">
         </div>
         <h2 style="font-size: 24px; font-weight: 900; letter-spacing: -1px;">PROYECTO LME <span style="color: var(--f1-red);">2026</span></h2>
     </div>
@@ -114,7 +111,8 @@
         <p>© 2026 LMET01. Este sitio es un proyecto académico sin fines de lucro.</p>
     </div>
     </footer>
+    </section>
+</main>
 
 </body>
 </html>
-  
