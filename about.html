@@ -154,25 +154,59 @@
 </header>
 
 
-<h2>Formulario de Contacto</h2>
+<main class="snap-container">
 
-    <form action="#" method="post">
+<section class="section-dark">
 
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+<div class="contact-wrapper">
 
-        <label for="correo">Correo electrónico:</label><br>
-        <input type="email" id="correo" name="correo" required><br><br>
+    <!-- FORMULARIO -->
+    <div class="contact-form">
 
-        <label for="telefono">Teléfono:</label><br>
-        <input type="tel" id="telefono" name="telefono"><br><br>
+        <h2 class="section-title">Contacto</h2>
+        <p class="form-subtitle">Selecciona con quién deseas comunicarte</p>
 
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="5" cols="30"></textarea><br><br>
+        <form>
 
-        <input type="submit" value="Enviar">
+            <label>Nombre completo</label>
+            <input type="text" required>
 
-    </form>
+            <label>Correo electrónico</label>
+            <input type="email" required>
+
+            <label>Teléfono</label>
+            <input type="tel">
+
+            <label>¿A quién deseas contactar?</label>
+            <select required>
+                <option value="">Selecciona una opción</option>
+                <option>Michael Ortiz - Frontend</option>
+                <option>Ivania Guerrero Frontend</option>
+                <option>Naomi - Frontend</option>
+                <option>Kath - Frontend</option>
+                <option>Equipo general</option>
+            </select>
+
+            <label>Asunto</label>
+            <select>
+                <option value="">Selecciona un asunto</option>
+                <option>Consulta</option>
+                <option>Soporte técnico</option>
+                <option>Colaboración</option>
+            </select>
+
+            <label>Mensaje</label>
+            <textarea rows="5"></textarea>
+
+            <input type="submit" value="Enviar mensaje">
+
+        </form>
+    </div>
+
+
+</section>
+
+</main>
 
 
 <section>
