@@ -9,9 +9,10 @@ body {
     background-color: var(--f1-dark);
     color: var(--f1-white);
     overflow: hidden;
+    overflow-y: auto;
 }
 
-/* Contenedor principal con efecto de desplazamiento Snap */
+/* Contenedor principal con efecto de desplazamiento Apple/Snap */
 .snap-container {
     height: 100vh;
     overflow-y: scroll;

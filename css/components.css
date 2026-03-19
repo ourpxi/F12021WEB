@@ -97,7 +97,7 @@
     border: 1px solo #ffffff33; 
 }
 
-/* Imagen extra grande con blur */
+/* Imagen con blur */
 .img-xl {
     width: 550px;
     height: 733px;
@@ -177,7 +177,6 @@
 .gallery-item:hover {
     transform: scale(1.03);
     border-color: var(--f1-red);
-    
 }
 
 /* CONTENEDOR GENERAL */
