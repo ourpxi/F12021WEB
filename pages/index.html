@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1 2021</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/themes.css">
-
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/themes.css">
-
+    <link rel="icon" href="/img/icons/f1f.png" type="image/png">
 </head>
 <body>
 <header>
@@ -22,12 +17,10 @@
             <img src="/img/icons/f1.png" class="logo-f1" alt="F1 Logo">
         </a>
     </div>
-
     <div class="header-center">
         <nav>
             <ul class="nav-lvl-1">
                 <li><a href="/pages/index.html">INICIO</a></li>
-
                 <li class="has-mega">
                     <a href="#">PILOTOS</a>
                     <div class="nav-lvl-2">
@@ -163,12 +156,11 @@
     
     <section id="hero" class="section-hero">
         <div class="card-md3 card-glass-light">
-            <h1 class="hero-title">F1 2021</h1>
+            <h1 class="hero-title">F1 WC 2021</h1>
 
-            <p>La temporada 2021 de la Fórmula 1 fue una de las más emocionantes y competitivas de los últimos años. A lo largo de 22 Grandes Premios disputados 
-               en diferentes países, los equipos y pilotos lucharon intensamente por el campeonato mundial.La batalla principal se dio entre Max Verstappen (Red Bull Racing) y
-               Lewis Hamilton (Mercedes), quienes llegaron empatados en puntos a la última carrera en Abu Dabi. Finalmente, Verstappen logró coronarse campeón del mundo por primera vez 
-               en su carrera, marcando el fin de la racha dominante de Mercedes en la era híbrida.La temporada también destacó por nuevas sedes, carreras muy disputadas y el regreso del público a muchos circuitos tras la pandemia.</p>
+            <p>La temporada 2021 de la Fórmula 1 fue una de las más emocionantes y competitivas de los últimos años. La batalla principal se dio entre Max Verstappen (Red Bull Racing) y
+            Lewis Hamilton (Mercedes), quienes llegaron empatados en puntos a la última carrera en Abu Dabi. Finalmente, Verstappen logró coronarse campeón del mundo por primera vez 
+            en su carrera, marcando el fin de la racha dominante de Mercedes en la era híbrida.</p>
 
             <a href="#campeon" class="btn-md3">EXPLORAR TEMPORADA</a>
         </div>
@@ -192,117 +184,94 @@
         </div>
     </section>
 
-    <section id="clasificacion" class="section-hero" style="background: linear-gradient(#000000b3, #0000002f), url('/img/repo/lewis1.jpg') center/cover;">
-        <div style="width: 100%; max-width: 1200px; margin: 0 auto;">
-            <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">CLASIFICACIÓN <br> FINAL 2021</h2>
-            <div class="card-md3 card-glass-light" style="color: var(--f1-silver); overflow-x: auto;">
-                <table style="width: 100%; border-collapse: collapse; font-size: 18px;">
+    <section id="clasificacion"  style="background: linear-gradient(#000000b3, #0000002f), url('/img/repo/lewis1.jpg') center/cover; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">CLASIFICACIÓN <br> FINAL 2021</h2>
+        <div style="width: 100%; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+            <div class="card-md3 card-glass-light" style="padding: 0; width: 100%; max-width: 1400px;">
+                <div style="padding: 20px 20px 14px; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: baseline; gap: 10px;">
+                    <span style="font-size: 16px; font-weight: 700; color: #ffffff; letter-spacing: 0.02em;">Clasificación de Pilotos</span>
+                    <span style="font-size: 13px; color: rgba(255,255,255,0.45);">Clasificación final · Temporada 2021</span>
+                </div>
+                <table class="f1-standings-table">
                     <thead>
-                        <tr style="border-bottom: 3px solid var(--f1-red);">
-                            <th style="padding: 16px; text-align: left; font-weight: 900; color: var(--f1-red);">POS</th>
-                            <th style="padding: 16px; text-align: left; font-weight: 900; color: var(--f1-red);">PILOTO</th>
-                            <th style="padding: 16px; text-align: left; font-weight: 900; color: var(--f1-red);">ESCUDERÍA</th>
-                            <th style="padding: 16px; text-align: center; font-weight: 900; color: var(--f1-red);">PUNTOS</th>
+                        <tr>
+                            <th style="width:64px; text-align:center;">Pos</th>
+                            <th>Piloto</th>
+                            <th>Escudería</th>
+                            <th style="width:160px;">Progreso</th>
+                            <th style="text-align:right; padding-right:20px;">Puntos</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border-bottom: 1px solid #e1060033; background: #ffffff08;">
-                            <td style="padding: 14px 16px; font-weight: 900; color: var(--f1-red); font-size: 20px;">1</td>
-                            <td style="padding: 14px 16px; font-weight: 700; color: var(--f1-red);">Max Verstappen</td>
-                            <td style="padding: 14px 16px; color: var(--f1-red);">Red Bull Racing</td>
-                            <td style="padding: 14px 16px; text-align: center; font-weight: 900; color: var(--f1-red);">395.5</td>
+                        <tr>
+                            <td style="text-align:center;"><span class="badge-gold">1°</span></td>
+                            <td><div class="f1-driver-name">Max Verstappen</div></td>
+                            <td><div class="f1-team-row"><span class="f1-team-dot" style="background:#3671C6;"></span><span class="f1-team-label">Red Bull Racing</span></div></td>
+                            <td><div class="f1-bar-bg"><span class="f1-bar-fill" style="width:100%; background:#3671C6;"></span></div></td>
+                            <td class="f1-points">395.5</td>
                         </tr>
-
-
-                       <tr style="border-bottom: 1px solid #e1060033;">
-
-                        <tr style="border-bottom: 1px solid #e1060033;">
-
-                            <td style="padding: 14px 16px; font-weight: 900; color: #009c97; font-size: 20px;">2</td>
-                            <td style="padding: 14px 16px; font-weight: 700; color: #009c97;">Lewis Hamilton</td>
-                            <td style="padding: 14px 16px; color: #009c97;">Mercedes-AMG</td>
-                            <td style="padding: 14px 16px; text-align: center; font-weight: 900; color: #009c97;">387.5</td>
+                        <tr>
+                            <td style="text-align:center;"><span class="badge-silver">2°</span></td>
+                            <td><div class="f1-driver-name">Lewis Hamilton</div></td>
+                            <td><div class="f1-team-row"><span class="f1-team-dot" style="background:#27F4D2;"></span><span class="f1-team-label">Mercedes-AMG</span></div></td>
+                            <td><div class="f1-bar-bg"><span class="f1-bar-fill" style="width:98%; background:#27F4D2;"></span></div></td>
+                            <td class="f1-points">387.5</td>
                         </tr>
-
-
-                        <tr style="border-bottom: 1px solid #e1060033; background: #ffffff08;">
-                            <td style="padding: 14px 16px; font-weight: 700;">3</td>
-                            <td style="padding: 14px 16px; font-weight: 700;">Valtteri Bottas</td>
-                            <td style="padding: 14px 16px;">Mercedes-AMG</td>
-                            <td style="padding: 14px 16px; text-align: center; font-weight: 700;">226</td>
-                            </tr>
-
+                        <tr>
+                            <td style="text-align:center;"><span class="badge-bronze">3°</span></td>
+                            <td><div class="f1-driver-name">Valtteri Bottas</div></td>
+                            <td><div class="f1-team-row"><span class="f1-team-dot" style="background:#27F4D2;"></span><span class="f1-team-label">Mercedes-AMG</span></div></td>
+                            <td><div class="f1-bar-bg"><span class="f1-bar-fill" style="width:57%; background:#27F4D2;"></span></div></td>
+                            <td class="f1-points">226</td>
                         </tr>
-
-                        <tr style="border-bottom: 1px solid #e1060033;">
-                            <td style="padding: 14px 16px; font-weight: 700;">4</td>
-                            <td style="padding: 14px 16px; font-weight: 700;">Sergio Pérez</td>
-                            <td style="padding: 14px 16px;">Red Bull Racing</td>
-                            <td style="padding: 14px 16px; text-align: center; font-weight: 700;">190</td>
-
-                            </tr>
-
-                        <tr style="border-bottom: 1px solid #e1060033; background: #ffffff08;">
-                           <td style="padding: 14px 16px; font-weight: 700;">5</td>
-                           <td style="padding: 14px 16px; font-weight: 700;">Carlos Sainz</td>
-                           <td style="padding: 14px 16px;">Scuderia Ferrari</td>
-                           <td style="padding: 14px 16px; text-align: center; font-weight: 700;">164.5</td>
-                           </tr>
-
-                        <tr style="border-bottom: 1px solid #e1060033;">
-                           <td style="padding: 14px 16px; font-weight: 700;">6</td>
-                           <td style="padding: 14px 16px; font-weight: 700;">Lando Norris</td>
-                           <td style="padding: 14px 16px;">McLaren F1</td>
-                           <td style="padding: 14px 16px; text-align: center; font-weight: 700;">160</td>
+                        <tr>
+                            <td style="text-align:center;"><span class="f1-pos">4</span></td>
+                            <td><div class="f1-driver-name">Sergio Pérez</div></td>
+                            <td><div class="f1-team-row"><span class="f1-team-dot" style="background:#3671C6;"></span><span class="f1-team-label">Red Bull Racing</span></div></td>
+                            <td><div class="f1-bar-bg"><span class="f1-bar-fill" style="width:48%; background:#3671C6;"></span></div></td>
+                            <td class="f1-points">190</td>
                         </tr>
-
-                        <tr style="border-bottom: 1px solid #e1060033; background: #ffffff08;">
-                           <td style="padding: 14px 16px; font-weight: 700;">7</td>
-                           <td style="padding: 14px 16px; font-weight: 700;">Charles Leclerc</td>
-                           <td style="padding: 14px 16px;">Scuderia Ferrari</td>
-                           <td style="padding: 14px 16px; text-align: center; font-weight: 700;">159</td>
-                         </tr>
- 
-
+                        <tr>
+                            <td style="text-align:center;"><span class="f1-pos">5</span></td>
+                            <td><div class="f1-driver-name">Carlos Sainz</div></td>
+                            <td><div class="f1-team-row"><span class="f1-team-dot" style="background:#E8002D;"></span><span class="f1-team-label">Scuderia Ferrari</span></div></td>
+                            <td><div class="f1-bar-bg"><span class="f1-bar-fill" style="width:42%; background:#E8002D;"></span></div></td>
+                            <td class="f1-points">164.5</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #e1060033; background: #ffffff08;">
-                            <td style="padding: 14px 16px; font-weight: 700;">5</td>
-                            <td style="padding: 14px 16px; font-weight: 700;">Lando Norris</td>
-                            <td style="padding: 14px 16px;">McLaren F1</td>
-                            <td style="padding: 14px 16px; text-align: center; font-weight: 700;">160</td>
+                        <tr>
+                            <td style="text-align:center;"><span class="f1-pos">6</span></td>
+                            <td><div class="f1-driver-name">Lando Norris</div></td>
+                            <td><div class="f1-team-row"><span class="f1-team-dot" style="background:#FF8000;"></span><span class="f1-team-label">McLaren F1</span></div></td>
+                            <td><div class="f1-bar-bg"><span class="f1-bar-fill" style="width:40%; background:#FF8000;"></span></div></td>
+                            <td class="f1-points">160</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #e1060033;">
-                            <td style="padding: 14px 16px; font-weight: 700;">6</td>
-                            <td style="padding: 14px 16px; font-weight: 700;">Carlos Sainz</td>
-                            <td style="padding: 14px 16px;">Scuderia Ferrari</td>
-                            <td style="padding: 14px 16px; text-align: center; font-weight: 700;">158</td>
+                        <tr>
+                            <td style="text-align:center;"><span class="f1-pos">7</span></td>
+                            <td><div class="f1-driver-name">Charles Leclerc</div></td>
+                            <td><div class="f1-team-row"><span class="f1-team-dot" style="background:#E8002D;"></span><span class="f1-team-label">Scuderia Ferrari</span></div></td>
+                            <td><div class="f1-bar-bg"><span class="f1-bar-fill" style="width:40%; background:#E8002D;"></span></div></td>
+                            <td class="f1-points">159</td>
                         </tr>
-                        <tr style="border-bottom: 1px solid #e1060033; background: #ffffff08;">
-                            <td style="padding: 14px 16px; font-weight: 700;">7</td>
-                            <td style="padding: 14px 16px; font-weight: 700;">Charles Leclerc</td>
-                            <td style="padding: 14px 16px;">Scuderia Ferrari</td>
-                            <td style="padding: 14px 16px; text-align: center; font-weight: 700;">146</td>
+                        <tr>
+                            <td style="text-align:center;"><span class="f1-pos">8</span></td>
+                            <td><div class="f1-driver-name">Daniel Ricciardo</div></td>
+                            <td><div class="f1-team-row"><span class="f1-team-dot" style="background:#FF8000;"></span><span class="f1-team-label">McLaren F1</span></div></td>
+                            <td><div class="f1-bar-bg"><span class="f1-bar-fill" style="width:29%; background:#FF8000;"></span></div></td>
+                            <td class="f1-points">115</td>
                         </tr>
-
-                        <tr style="border-bottom: 1px solid #e1060033;">
-                            <td style="padding: 14px 16px; font-weight: 700;">8</td>
-                            <td style="padding: 14px 16px; font-weight: 700;">Daniel Ricciardo</td>
-                            <td style="padding: 14px 16px;">McLaren F1</td>
-                            <td style="padding: 14px 16px; text-align: center; font-weight: 700;">115</td>
+                        <tr>
+                            <td style="text-align:center;"><span class="f1-pos">9</span></td>
+                            <td><div class="f1-driver-name">Pierre Gasly</div></td>
+                            <td><div class="f1-team-row"><span class="f1-team-dot" style="background:#64C4FF;"></span><span class="f1-team-label">AlphaTauri</span></div></td>
+                            <td><div class="f1-bar-bg"><span class="f1-bar-fill" style="width:28%; background:#64C4FF;"></span></div></td>
+                            <td class="f1-points">110</td>
                         </tr>
-
-                        <tr style="border-bottom: 1px solid #e1060033; background: #ffffff08;">
-                            <td style="padding: 14px 16px; font-weight: 700;">9</td>
-                            <td style="padding: 14px 16px; font-weight: 700;">Pierre Gasly</td>
-                            <td style="padding: 14px 16px;">AlphaTauri</td>
-                            <td style="padding: 14px 16px; text-align: center; font-weight: 700;">110</td>
-                        </tr>
-
-                        <tr style="border-bottom: 1px solid #e1060033; background: #ffffff08;">
-                            <td style="padding: 14px 16px; font-weight: 700;">10</td>
-                            <td style="padding: 14px 16px; font-weight: 700;">Fernando Alonso</td>
-                            <td style="padding: 14px 16px;">Alpine F1 Team</td>
-                            <td style="padding: 14px 16px; text-align: center; font-weight: 700;">81</td>
+                        <tr>
+                            <td style="text-align:center;"><span class="f1-pos">10</span></td>
+                            <td><div class="f1-driver-name">Fernando Alonso</div></td>
+                            <td><div class="f1-team-row"><span class="f1-team-dot" style="background:#FF87BC;"></span><span class="f1-team-label">Alpine F1 Team</span></div></td>
+                            <td><div class="f1-bar-bg"><span class="f1-bar-fill" style="width:20%; background:#FF87BC;"></span></div></td>
+                            <td class="f1-points">81</td>
                         </tr>
                     </tbody>
                 </table>
@@ -325,7 +294,7 @@
         <div class="footer-column">
             <h4>DESARROLLADORES</h4>
             <ul class="nav-lvl-3">
-                 <li class="dev-team">Michael Ortiz</li>
+                <li class="dev-team">Michael Ortiz</li>
                 <li class="dev-team">Ivania Guerrero</li>
                 <li class="dev-team">Nahomy Velásquez</li>
                 <li class="dev-team">Katherine Huezo</li>

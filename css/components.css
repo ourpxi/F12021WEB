@@ -3,11 +3,27 @@
     background-color: var(--md-sys-color-surface-variant);
     border-radius: 40px;
     padding: 60px;
-    max-width: 900px;
+    max-width: 1000px;
     height: auto;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+/* Contenedor del logo en la esquina superior derecha */
+.card-logo {
+    position: absolute;
+    top: 50px;
+    right: 90px;
+}
+
+.card-logo img {
+    width: var(--logo-size, 200px);
+    height: auto;
+    object-fit: contain;
+    opacity: 0.9;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
 }
 
 /* Título hero grande */
@@ -239,3 +255,19 @@ input[type="submit"]:hover{
     opacity: 0.9;
 }
 
+.f1-standings-table { width: 100%; border-collapse: collapse; font-size: 26px; }
+.f1-standings-table thead th { padding: 12px 16px; text-align: left; font-size: 22px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.5); border-bottom: 1px solid rgba(255,255,255,0.15); }
+.f1-standings-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.08); }
+.f1-standings-table tbody tr:hover { background: rgba(255,255,255,0.06); }
+.f1-standings-table td { padding: 14px 66px; vertical-align: middle; }
+.f1-pos { font-size: 24px; font-weight: 500; color: rgba(255,255,255,0.4); }
+.f1-driver-name { font-weight: 700; font-size: 16px; color: #ffffff; }
+.f1-team-row { display: flex; align-items: center; gap: 8px; }
+.f1-team-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+.f1-team-label { font-size: 14px; color: rgba(255,255,255,0.6); }
+.f1-bar-bg { background: rgba(255,255,255,0.12); border-radius: 2px; height: 5px; width: 150px; overflow: hidden; }
+.f1-bar-fill { height: 5px; border-radius: 2px; display: block; }
+.f1-points { font-weight: 700; font-size: 16px; color: #ffffff; text-align: right; padding-right: 20px; }
+.badge-gold   { background: #FAD055; color: #7A5A00; font-size: 12px; font-weight: 700; border-radius: 4px; padding: 3px 9px; }
+.badge-silver { background: rgba(255,255,255,0.15); color: #ffffff; font-size: 12px; font-weight: 700; border-radius: 4px; padding: 3px 9px; border: 1px solid rgba(255,255,255,0.25); }
+.badge-bronze { background: #C8824A; color: #fff; font-size: 12px; font-weight: 700; border-radius: 4px; padding: 3px 9px; }

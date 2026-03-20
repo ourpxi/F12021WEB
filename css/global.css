@@ -132,7 +132,7 @@ header {
 }
 
 /* Layout de perfil (Imagen + Info) */
-.profile-layout { display: flex; align-items: center; gap: 100px; max-width: 1400px; }
+.profile-layout { display: flex; align-items: center; gap: 100px; max-width: 1800px; } /*Original 1400px
 
 /* --- VARIANTES DE SECCIONES --- */
 
@@ -214,6 +214,11 @@ header {
     padding-top: 40px;
     font-size: 14px;
     color: #888888;
+}
+
+.footer-brand img {
+    height: auto;
+    width: 150px;
 }
 
 .dev-team {
