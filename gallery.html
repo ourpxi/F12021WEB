@@ -2,18 +2,17 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GP de Brasil</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/global.css">
-    <link rel="stylesheet" href="../../css/components.css">
-    <link rel="stylesheet" href="../../css/themes.css">
+    <title>F1 2021 Simple</title>
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/themes.css">
 </head>
-<body class="theme-global"> 
+<body>
 <header>
     <div class="header-left">
         <a href="/pages/index.html">
-            <img src="/img/icons/f1.png" class="logo-f1" alt="F1 Logo">
+            <img src="../img/icons/f1.png" class="logo-f1" alt="F1 Logo">
         </a>
     </div>
 
@@ -144,7 +143,7 @@
                     </div>
                 </li>
 
-                <li><a href="/pages/galeria.html">GALERÍA</a></li>
+                <li><a href="gallery.html">GALERÍA</a></li>
                 <li><a href="/pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
@@ -152,64 +151,98 @@
 
     <div class="header-right"></div>
 </header>
+ <div class="contenedor-galeria">
 
-    <main class="snap-container">
-        
-<section id="track-intro" class="section-hero" style="background-image: linear-gradient(#000000b3, #0000002f), url('../../img/tracks/brazil.jpg'); background-size: cover; background-position: bottom;">
-    <div class="profile-layout" style="flex-direction: column; gap: 60px;">
-        <br><h1 class="hero-title">AUTÓDROMO JOSÉ CARLOS</h1>
-        <div style="display: flex; gap: 60px; align-items: flex-start;">
-            <img src="../../img/brasil-map.jpg" class="img-glass-horizontal" alt="Mapa Interlagos" style="object-fit: contain; padding: 40px; width: 1400px; height: 700px;">
-            <div class="card-md3 card-glass-light">
-                <p>El Autódromo José Carlos Pace, conocido como Interlagos, está ubicado en São Paulo y es uno de los circuitos más tradicionales de la Fórmula 1. Su trazado corto pero técnico, con grandes cambios de elevación, suele producir carreras muy emocionantes.</p>
-                <div class="stats-grid">
-                    <div class="stat-card" style="background: var(--f1-dark);"><span class="stat-number">4.309</span><span class="stat-label">KM de Longitud</span></div>
-                    <div class="stat-card" style="background: var(--f1-dark);"><span class="stat-number">15</span><span class="stat-label">Curvas Totales</span></div>
-                </div>
-            </div>
+     
+        <div class="tarjeta">
+            <img src="../img/drivers/verstappen_inspyrenet.png" alt="Max Verstappen">
+            <h3>Max Verstappen</h3>
+            <p>El León Holandés. En 2021 logró 10 victorias y se coronó Campeón del Mundo por primera vez.</p>
         </div>
-    </div>
-</section>
 
-<section id="race-2021" class="section-dark" style="background-image: linear-gradient(#000000b3, #0000002f), url('../../img/tracks/brazil1.jpg'); background-size: cover; background-position: top;">
-    <div class="profile-layout" style="flex-direction: row-reverse;">
-        <div class="profile-info">
-            <h2 class="section-title">REMONTADA <br> HISTÓRICA</h2>
-            <div class="card-md3 card-glass-light">
-                <p>
-                    El Gran Premio de Brasil 2021 fue protagonizado por una impresionante remontada de <strong>Lewis Hamilton</strong>. Tras ser descalificado en la clasificación sprint y salir desde el fondo, el piloto británico logró avanzar posiciones con un ritmo espectacular.
-                    <br><br>
-                    Hamilton finalmente superó a <strong>Max Verstappen</strong> en las últimas vueltas para llevarse una victoria memorable en Interlagos, manteniendo viva la lucha por el campeonato mundial.
-                </p>
-                <a href="#track-facts" class="btn-md3">VER DATOS</a>
-            </div>
+     
+        <div class="tarjeta">
+            <img src="../img/drivers/hamilton_inspyrenet.png" alt="Lewis Hamilton">
+            <h3>Lewis Hamilton</h3>
+            <p>El 7 veces campeón. Peleó el título hasta la última vuelta del campeonato.</p>
         </div>
-        <img src="../../img/tracks/brazil2.jpg" class="img-xl" alt="Victoria Hamilton Brasil">
-    </div>
-</section>
 
-<section id="track-facts" class="section-dark" style="background-image: linear-gradient(#000000b3, #00000000), url('../../img/tracks/brazil3.jpg'); background-size: cover; background-position: bottom;">
-    <div class="card-md3 card-glass-light" style="max-width: 1000px; color: var(--f1-silver);">
-        <h2 class="section-title" style="font-size: 50px;">DATOS CURIOSOS</h2>
-        <p style="font-size: 20px;">
-            • Interlagos corre en sentido antihorario, algo poco común en la Fórmula 1.<br>
-            • Es uno de los circuitos más cortos del calendario moderno.<br>
-            • La carrera de 2021 es recordada por la espectacular remontada de Lewis Hamilton.
-        </p>
-        <div class="stats-grid">
-            <div class="stat-card" style="background: var(--f1-dark);"><span class="stat-number">2</span><span class="stat-label">Zonas de DRS</span></div>
-            <div class="stat-card" style="background: var(--f1-dark);"><span class="stat-number">71</span><span class="stat-label">Vueltas</span></div>
+        <div class="tarjeta">
+            <img src="../img/drivers/leclerc_inspyrenet.png" alt="Charles Leclerc">
+            <h3>Charles Leclerc</h3>
+            <p>Piloto estrella de Ferrari con poles impresionantes en 2021.</p>
         </div>
-    </div>
-</section>
 
-    <section>
+       
+        <div class="tarjeta">
+            <img src="../img/drivers/norris_inspyrenet.png" alt="Lando Norris">
+            <h3>Lando Norris</h3>
+            <p>Gran temporada con McLaren, cerca de ganar en Rusia.</p>
+        </div>
+
+       
+        <div class="tarjeta">
+            <img src="../img/drivers/sainz_inspyrenet.png" alt="Carlos Sainz">
+            <h3>Carlos Sainz</h3>
+            <p>Muy consistente en Ferrari, superando expectativas.</p>
+        </div>
+
+      
+        <div class="tarjeta">
+            <img src="../img/drivers/perez_inspyrenet.png" alt="Sergio Pérez">
+            <h3>Sergio Pérez</h3>
+            <p>Clave para Red Bull, victoria en Bakú y defensa legendaria.</p>
+        </div>
+
+    
+        <div class="tarjeta">
+            <img src="../img/drivers/alonso_inspyrenet.png" alt="Fernando Alonso">
+            <h3>Fernando Alonso</h3>
+            <p>Regreso del bicampeón con podio en Qatar.</p>
+        </div>
+
+       
+        <div class="tarjeta">
+            <img src="../img/drivers/ricciardo_inspyrenet.png" alt="Daniel Ricciardo">
+            <h3>Daniel Ricciardo</h3>
+            <p>Ganador en Monza 2021 con McLaren.</p>
+        </div>
+
+     
+        <div class="tarjeta">
+            <img src="../img/cars/rb16b.png" alt="Red Bull RB16B">
+            <h3>Red Bull RB16B</h3>
+            <p>Coche campeón diseñado por Adrian Newey con motor Honda.</p>
+        </div>
+
+      
+        <div class="tarjeta">
+            <img src="../img/cars/w12.png" alt="Mercedes W12">
+            <h3>Mercedes W12</h3>
+            <p>Máquina dominante que ganó el campeonato de constructores.</p>
+        </div>
+
+       
+        <div class="tarjeta">
+            <img src="../img/icons/redbull.png" alt="Red Bull Racing">
+            <h3>Red Bull Racing</h3>
+            <p>Escudería campeona del mundo de pilotos en 2021.</p>
+        </div>
+
+      
+        <div class="tarjeta">
+            <img src="../img/icons/mercedes.png" alt="Mercedes AMG F1">
+            <h3>Mercedes-AMG F1</h3>
+            <p>Ganadores del campeonato de constructores 2021.</p>
+        </div>
+
+    </div>
+  <section>
     <footer class="main-footer snap-section">
     <div class="footer-top">
         <div class="footer-brand">
-            <img src="/img/icons/f1.png" class="logo-f1" alt="F1 Logo">
+            <img src="../img/icons/f1.png" class="logo-f1" alt="F1 Logo">
             <div style="width: 2px; height: 50px; background: #ffffff33;"></div>
-            <img src="/img/icons/udb_logo.png" class="logo" alt="logo">
         </div>
         <h2 style="font-size: 24px; font-weight: 900; letter-spacing: -1px;">PROYECTO LME <span style="color: var(--f1-red);">2026</span></h2>
     </div>
@@ -218,18 +251,18 @@
         <div class="footer-column">
             <h4>DESARROLLADORES</h4>
             <ul class="nav-lvl-3">
-                <li class="dev-team">Michael Ortiz</li>
+                 <li class="dev-team">Michael Ortiz</li>
                 <li class="dev-team">Ivania Guerrero</li>
-                <li class="dev-team">Naomi</li>
-                <li class="dev-team">Kath</li>
+                <li class="dev-team">Nahomy Velásquez</li>
+                <li class="dev-team">Katherine Huezo</li>
             </ul>
         </div>
         
         <div class="footer-column">
             <h4>NAVEGACIÓN</h4>
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/pages/galeria.html">Galería Multimedia</a></li>
+                <li><a href="../pages/index.html">Inicio</a></li>
+                <li><a href="gallery.html">Galería Multimedia</a></li>
                 <li><a href="/pages/contacto.html">Contacto</a></li>
             </ul>
         </div>
@@ -246,11 +279,11 @@
     </div>
 
     <div class="footer-bottom">
-        <p>© 2026 Michael & Team. Este sitio es un proyecto académico sin fines de lucro.</p>
+        <p>© 2026 LMET01. Este sitio es un proyecto académico sin fines de lucro.</p>
     </div>
     </footer>
     </section>
+</main>
 
-    </main>
 </body>
 </html>

@@ -195,64 +195,142 @@
     border-color: var(--f1-red);
 }
 
+/* CONTENEDOR GENERAL */
+.contact-container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
 
-/*KATY PARTE FORMULARIO*/
+/* GRID DEL EQUIPO */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
 
-form{
+/* TARJETA DE CADA INTEGRANTE */
+.team-card {
+    background: var(--f1-carbon);
+    border-radius: 30px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #ffffff1a;
+}
+
+/* HOVER */
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 40px #00000080;
+    border-color: var(--f1-red);
+}
+
+/* IMAGEN */
+.team-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid var(--f1-red);
+}
+
+/* NOMBRE */
+.team-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/* ROL */
+.team-card p {
+    color: var(--f1-silver);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* REDES */
+.team-socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team-socials a {
+    text-decoration: none;
+    color: var(--f1-white);
+    font-size: 14px;
+    border: 1px solid #ffffff33;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.team-socials a:hover {
+    background: var(--f1-red);
+    border-color: var(--f1-red);
+}
+
+form {
     width: 420px;
-    margin: 40px auto;
-    padding: 25px;
-    background: var(--md-surface-variant);
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    font-family: 'Roboto', sans-serif;
-    color: var(--md-on-surface);
+    margin: 140px auto 60px auto; /* espacio por el header */
+    padding: 30px;
+    background: var(--f1-carbon);
+    border-radius: 15px;
+    border: 1px solid #ffffff1a;
+    box-shadow: 0 10px 30px #00000080;
 }
 
-/* labels */
+/* TÍTULO */
+h2 {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 40px;
+}
 
-label{
+/* LABELS */
+form label {
     font-weight: 500;
-    color: var(--md-on-surface);
+    display: block;
+    margin-top: 10px;
 }
 
-/* inputs y textarea */
-
-input,
-textarea{
+/* INPUTS, TEXTAREA Y SELECT */
+form input,
+form textarea,
+form select {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 6px;
     border-radius: 6px;
-    border: 1px solid var(--md-primary);
-    background: var(--md-surface);
-    color: var(--md-on-surface);
+    border: 1px solid var(--f1-red);
+    background: var(--f1-dark);
+    color: var(--f1-white);
     font-size: 14px;
 }
 
-/* focus */
-
-input:focus,
-textarea:focus{
+/* EFECTO FOCUS */
+form input:focus,
+form textarea:focus,
+form select:focus {
     outline: none;
-    border: 2px solid var(--md-primary);
+    border: 2px solid var(--f1-red);
 }
 
-/* botón */
-
-input[type="submit"]{
-    background: var(--md-primary);
-    color: var(--f1-white);
+/* BOTÓN */
+form input[type="submit"] {
+    background: var(--f1-red);
     border: none;
+    margin-top: 15px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
 }
 
-/* hover botón */
-
-input[type="submit"]:hover{
-    opacity: 0.9;
+/* HOVER BOTÓN */
+form input[type="submit"]:hover {
+    opacity: 0.8;
 }
 
 .f1-standings-table { width: 100%; border-collapse: collapse; font-size: 26px; }
