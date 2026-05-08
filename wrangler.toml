@@ -1,14 +1,5 @@
-name = "F12021WEB"
+name = "caleb2"
 compatibility_date = "2026-05-08"
 
 [assets]
 directory = "."
-name = "caleb1"
-main = "workers-site/index.js"
-compatibility_date = "2024-12-16"
-
-[build]
-command = "npm run build"
-
-[site]
-bucket = "."
