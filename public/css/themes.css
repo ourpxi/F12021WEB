@@ -1,0 +1,84 @@
+:root {
+    --f1-red: #e10600;
+    --f1-dark: #15151e;
+    --f1-carbon: #1f1f27;
+    --f1-white: #ffffff;
+    --f1-silver: #f3f3f3;
+
+    --f1-dark-98: #15151efa;
+    --f1-red-50: #e1060080;
+
+    --md-surface: var(--f1-dark);
+    --md-on-surface: var(--f1-white);
+    --md-sys-color-surface-variant: var(--f1-carbon);
+    --md-primary: var(--f1-red);
+
+    --rb-primary:      #7c1301;
+    --rb-on-primary:   #ffffff;
+    --rb-container:    #1f1f27;
+    --rb-on-container: #fefefe;
+
+    --transition: all 0.25s ease;
+
+    --logo-size: 200px;
+}
+
+.theme-redbull {
+    --md-primary:      #3671C6;
+    --md-container:    #0d1b2e;
+    --md-on-container: #ffffff;
+}
+
+.theme-mercedes {
+    --md-primary:      #27F4D2;
+    --md-container:    #00302b;
+    --md-on-container: #ffffff;
+}
+
+.theme-ferrari {
+    --md-primary:      #E8002D;
+    --md-container:    #1a0008;
+    --md-on-container: #ffffff;
+}
+
+.theme-mclaren {
+    --md-primary:      #FF8000;
+    --md-container:    #1a0f00;
+    --md-on-container: #ffffff;
+}
+
+.theme-alpine {
+    --md-primary:      #FF87BC;
+    --md-container:    #1a0013;
+    --md-on-container: #ffffff;
+}
+
+.theme-alpha-tauri {
+    --md-primary:      #64C4FF;
+    --md-container:    #001a2e;
+    --md-on-container: #ffffff;
+}
+
+.theme-aston-martin {
+    --md-primary:      #358C75;
+    --md-container:    #001a14;
+    --md-on-container: #ffffff;
+}
+
+.theme-williams {
+    --md-primary:      #64AAFF;
+    --md-container:    #001433;
+    --md-on-container: #ffffff;
+}
+
+.theme-alfa-romeo {
+    --md-primary:      #C92D4B;
+    --md-container:    #1a0009;
+    --md-on-container: #ffffff;
+}
+
+.theme-haas {
+    --md-primary:      #B6BABD;
+    --md-container:    #1a1a1a;
+    --md-on-container: #ffffff;
+}

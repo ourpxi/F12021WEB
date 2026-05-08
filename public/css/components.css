@@ -1,0 +1,422 @@
+/* Variante invertida del layout de perfil (imagen a la derecha en desktop) */
+.profile-layout--reverse {
+    flex-direction: row-reverse;
+}
+
+/* Info del piloto dentro del profile-layout */
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Tarjeta default */
+.card-md3 {
+    background-color: var(--md-sys-color-surface-variant);
+    border-radius: 40px;
+    padding: 60px;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+/* Contenedor del logo en la esquina superior derecha */
+.card-logo {
+    position: absolute;
+    top: 50px;
+    right: 90px;
+}
+
+.card-logo img {
+    width: var(--logo-size, 200px);
+    height: auto;
+    object-fit: contain;
+    opacity: 0.9;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+}
+
+/* Título hero grande */
+.hero-title {
+    font-size: 110px;
+    line-height: 100px;
+    letter-spacing: -2px;
+    margin-bottom: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Título de sección */
+.section-title {
+    font-size: 72px;
+    line-height: 80px;
+    margin-bottom: 32px;
+}
+
+/* Párrafos dentro de tarjetas */
+.card-md3 p {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 48px;
+    color: var(--md-on-surface);
+}
+
+/* Botones*/
+.btn-md3 {
+    background-color: var(--md-primary);
+    color: #ffffff;
+    padding: 20px 48px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    width: max-content;
+    transition: transform 0.2s ease;
+}
+
+/* Efecto hover del botón */
+.btn-md3:hover {
+    transform: scale(1.05);
+}
+
+/* Tarjeta de equipo con borde izquierdo grueso y sombra profunda */
+.card-team {
+    background-color: var(--md-container);
+    color: var(--md-on-container);
+    border-radius: 40px;
+    padding: 60px;
+    max-width: 800px;
+    border-left: 12px solid var(--md-primary); 
+    box-shadow: 0px 30px 60px #000000cc; 
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+/* Párrafos dentro de tarjetas de equipo con estilos heredados */
+.card-team p {
+    color: inherit; 
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 48px;
+}
+
+/* Tarjeta con efecto cristal translúcido blur */
+.card-glass-light {
+    backdrop-filter: blur(5px);
+    color: var(--f1-white);
+    border: 1px solid #ffffff33;
+    background-color: #00000050; 
+
+}
+
+
+/* Imagen con efecto cristal - vertical */
+.img-glass {
+    backdrop-filter: blur(5px);
+    width: 550px;
+    height: 733px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 0px 20px 40px #00000080;
+    border: 1px solo #ffffff33; 
+}
+
+/* Imagen con blur */
+.img-xl {
+    width: 550px;
+    height: 733px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 0px 20px 40px #00000080;
+    backdrop-filter: blur(5px); 
+    border: 1px solid #ffffff33;
+
+}
+
+/* Imagen horizontal con efecto cristal */
+.img-glass-horizontal {
+    backdrop-filter: blur(5px);
+    width: 550px;
+    height: 275px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 0px 20px 40px #00000080;
+    border: 1px solid #ffffff33;
+}
+
+/* Grid de dos columnas para mostrar estadísticas */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+/* Tarjeta individual para estadística con fondo translúcido */
+.stat-card {
+    background-color: #ffffff1a; 
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid #ffffff33;
+    text-align: center;
+}
+
+/* Número grande de la estadística en color rojo F1 */
+.stat-number {
+    display: block;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--f1-red);
+}
+
+/* Etiqueta descriptiva de la estadística en mayúsculas */
+.stat-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--f1-white);
+}
+
+.f1-standings-table { width: 100%; border-collapse: collapse; font-size: 26px; }
+.f1-standings-table thead th { padding: 12px 16px; text-align: left; font-size: 22px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.5); border-bottom: 1px solid rgba(255,255,255,0.15); }
+.f1-standings-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.08); }
+.f1-standings-table tbody tr:hover { background: rgba(255,255,255,0.06); }
+.f1-standings-table td { padding: 14px 66px; vertical-align: middle; }
+.f1-pos { font-size: 24px; font-weight: 500; color: rgba(255,255,255,0.4); }
+.f1-driver-name { font-weight: 700; font-size: 16px; color: #ffffff; }
+.f1-team-row { display: flex; align-items: center; gap: 8px; }
+.f1-team-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+.f1-team-label { font-size: 14px; color: rgba(255,255,255,0.6); }
+.f1-bar-bg { background: rgba(255,255,255,0.12); border-radius: 2px; height: 5px; width: 150px; overflow: hidden; }
+.f1-bar-fill { height: 5px; border-radius: 2px; display: block; }
+.f1-points { font-weight: 700; font-size: 16px; color: #ffffff; text-align: right; padding-right: 20px; }
+.badge-gold   { background: #FAD055; color: #7A5A00; font-size: 12px; font-weight: 700; border-radius: 4px; padding: 3px 9px; }
+.badge-silver { background: rgba(255,255,255,0.15); color: #ffffff; font-size: 12px; font-weight: 700; border-radius: 4px; padding: 3px 9px; border: 1px solid rgba(255,255,255,0.25); }
+.badge-bronze { background: #C8824A; color: #fff; font-size: 12px; font-weight: 700; border-radius: 4px; padding: 3px 9px; }
+/* ============================================================
+   RESPONSIVE — components.css
+   Tablet : 769px – 1024px
+   Mobile : ≤ 768px
+   ============================================================ */
+
+/* ---- TABLET ---- */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Tipografía */
+    .hero-title {
+        font-size: clamp(52px, 7vw, 80px);
+        line-height: 1.0;
+        letter-spacing: -1px;
+        margin-bottom: 28px;
+    }
+
+    .section-title {
+        font-size: clamp(36px, 5vw, 56px);
+        line-height: 1.15;
+        margin-bottom: 24px;
+    }
+
+    /* Cards */
+    .card-md3 {
+        padding: 40px;
+        border-radius: 28px;
+        max-width: 100%;
+    }
+
+    .card-md3 p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 32px;
+    }
+
+    .card-team {
+        padding: 40px;
+        border-radius: 28px;
+        max-width: 100%;
+    }
+
+    .card-team p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 32px;
+    }
+
+    /* Logo dentro de card */
+    .card-logo {
+        top: 36px;
+        right: 40px;
+    }
+
+    .card-logo img {
+        width: var(--logo-size, 140px);
+    }
+
+    /* Imágenes — eliminar dimensiones fijas, usar fluidas */
+    .img-xl,
+    .img-glass {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        border-radius: 28px;
+    }
+
+    .img-glass-horizontal {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        aspect-ratio: 2 / 1;
+        border-radius: 28px;
+    }
+
+    /* Info de perfil */
+    .profile-info { flex: 1; }
+
+    /* Botones */
+    .btn-md3 {
+        padding: 16px 36px;
+        font-size: 16px;
+    }
+
+    /* Stats */
+    .stat-number { font-size: 36px; }
+
+    /* Tabla standings */
+    .f1-standings-table { font-size: 16px; }
+    .f1-standings-table thead th { font-size: 14px; padding: 10px 12px; }
+    .f1-standings-table td { padding: 12px 20px; }
+    .f1-bar-bg { width: 100px; }
+}
+
+/* ---- MOBILE ---- */
+@media (max-width: 768px) {
+
+    /* Tipografía */
+    .hero-title {
+        font-size: clamp(28px, 9vw, 52px);
+        line-height: 1.05;
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: clamp(26px, 7vw, 40px);
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+    /* Cards — reducir relleno y redondeo */
+    .card-md3 {
+        padding: 24px 20px;
+        border-radius: 20px;
+        max-width: 100%;
+    }
+
+    .card-md3 p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    .card-team {
+        padding: 24px 20px;
+        border-radius: 20px;
+        max-width: 100%;
+        border-left-width: 6px;
+    }
+
+    .card-team p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    /* Logo dentro de card: recolocar para no tapar el título */
+    .card-logo {
+        position: static;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+    }
+
+    .card-logo img {
+        width: clamp(80px, 30vw, 130px);
+    }
+
+    /* Imágenes — CRÍTICO: quitar dimensiones fijas */
+    .img-xl,
+    .img-glass {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        border-radius: 20px;
+        /* Limitar altura máxima para que no ocupe toda la pantalla */
+        max-height: 60vw;
+        object-fit: cover;
+    }
+
+    .img-glass-horizontal {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border-radius: 20px;
+    }
+
+    /* Botón ancho completo en móvil */
+    .btn-md3 {
+        width: 100%;
+        text-align: center;
+        padding: 16px 24px;
+        font-size: 16px;
+        border-radius: 100px;
+        /* Área de toque mínima de 48px */
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Stats: 2 columnas en móvil, 1 si la pantalla es muy pequeña */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 360px) {
+        .stats-grid { grid-template-columns: 1fr; }
+    }
+
+    .stat-card { padding: 16px 12px; border-radius: 14px; }
+    .stat-number { font-size: 32px; }
+    .stat-label  { font-size: 12px; }
+
+    /* Tabla standings — reducción fuerte */
+    .f1-standings-table { font-size: 13px; }
+    .f1-standings-table thead th {
+        font-size: 11px;
+        padding: 8px 8px;
+        letter-spacing: 0;
+    }
+    .f1-standings-table td { padding: 10px 8px; }
+    .f1-driver-name { font-size: 13px; }
+    .f1-team-label  { font-size: 11px; }
+    .f1-points      { font-size: 13px; padding-right: 8px; }
+    .f1-bar-bg      { width: 60px; }
+
+    /* Perfil de piloto/escudería */
+    .profile-info { text-align: center; }
+
+    /* En móvil, el layout invertido apila igual que el normal */
+    .profile-layout--reverse {
+        flex-direction: column;
+    }
+}
