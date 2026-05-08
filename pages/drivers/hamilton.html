@@ -11,6 +11,9 @@
 </head>
 <body class="theme-mercedes">
 
+<!-- Toggle CSS-only para el menú hamburger -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+
 <header>
     <div class="header-left">
         <a href="/pages/index.html">
@@ -151,7 +154,14 @@
         </nav>
     </div>
 
-    <div class="header-right"></div>
+    <div class="header-right">
+        <!-- Hamburger: solo visible en móvil -->
+        <label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
 </header>
 <main class="snap-container">
         
@@ -159,7 +169,7 @@
             <div class="profile-layout">
                 <img src="../../img/drivers/hamilton_inspyrenet.png" class="img-glass" alt="Lewis Hamilton">
                 <div class="profile-info">
-                    <h1 class="hero-title">EL HEPTACAMPEÓN #44</h1>
+                    <h1 class="hero-title">EL HEPTACAMPEÓNse</h1>
                     <div class="card-md3 card-glass-light">
                         <p>Lewis Hamilton. Siete veces campeón del mundo y uno de los pilotos más dominantes de la historia. En 2021 luchó hasta la última vuelta por su octavo título mundial.</p>
                         <div class="stats-grid">
@@ -174,7 +184,7 @@
         </section>
 
         <section id="history" class="section-dark" style="background-image: linear-gradient(#000000b3, #0000002f), url('../../img/repo/lewis4.jpg'); background-size: cover; background-position: center;">
-            <div class="profile-layout" style="flex-direction: row-reverse;">
+            <div class="profile-layout profile-layout--reverse">
                 <div class="profile-info">
                     <h2 class="section-title">HISTORIA DE <br> UNA LUCHA ÉPICA</h2>
                     <div class="card-md3 card-glass-light">

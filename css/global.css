@@ -12,7 +12,7 @@ body {
     overflow-y: auto;
 }
 
-/* Contenedor principal con efecto de desplazamiento Apple/Snap */
+/* Contenedor principal con efecto de desplazamiento */
 .snap-container {
     height: 100vh;
     overflow-y: scroll;
@@ -233,3 +233,322 @@ header {
     to { opacity: 1; transform: translateY(0px); }
 }
 
+/* ============================================================
+   VIDEO HERO
+   ============================================================ */
+
+/* La sección se convierte en contenedor del video */
+.section-hero-video {
+    position: relative;
+    overflow: hidden;
+    padding: 0;      
+}
+
+.hero-video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-video-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.55) 0%,
+        rgba(0,0,0,0.25) 50%,
+        rgba(0,0,0,0.65) 100%
+    );
+    z-index: 1;
+}
+
+.section-hero-video .hero-title {
+    position: relative;
+    z-index: 2;
+}
+
+/* ============================================================
+   BOTÓN DE MUTE / UNMUTE
+   ============================================================ */
+
+.audio-toggle-btn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9999;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--f1-red);
+    background-color: var(--f1-dark-98, rgba(10,10,10,0.85));
+    backdrop-filter: blur(10px);
+    color: var(--f1-white);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    transition: background-color 0.2s, transform 0.15s, border-color 0.2s;
+}
+
+.audio-toggle-btn svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.audio-toggle-btn:hover {
+    background-color: var(--f1-red);
+    transform: scale(1.1);
+}
+
+.audio-toggle-btn.is-muted {
+    border-color: #ffffff44;
+    color: #aaaaaa;
+}
+
+.audio-toggle-btn.is-muted:hover {
+    background-color: #333333;
+    border-color: var(--f1-white);
+    color: var(--f1-white);
+}
+
+@media (max-width: 768px) {
+    .audio-toggle-btn {
+        bottom: 18px;
+        right: 18px;
+        width: 42px;
+        height: 42px;
+    }
+    .audio-toggle-btn svg { width: 18px; height: 18px; }
+}
+
+
+/* --- HAMBURGER MENU (Mobile) --- */
+
+/* Input oculto que actúa como interruptor */
+.nav-toggle { display: none; }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 10001;
+    flex-shrink: 0;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--f1-white);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.nav-toggle:checked ~ header .hamburger span:nth-child(1) { transform: translateY(9.5px) rotate(45deg); }
+.nav-toggle:checked ~ header .hamburger span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-toggle:checked ~ header .hamburger span:nth-child(3) { transform: translateY(-9.5px) rotate(-45deg); }
+
+/* ============================================================
+   TABLET  (769px – 1024px)
+   ============================================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Header */
+    header {
+        height: 80px;
+        padding: 0px 40px;
+    }
+
+    .logo-f1 { height: 36px; }
+
+    /* Nav */
+    .nav-lvl-1 { gap: 28px; }
+    .nav-lvl-1 > li { height: 80px; }
+    .nav-lvl-1 a { font-size: 16px; }
+
+    /* Mega menu */
+    .nav-lvl-2 {
+        top: 80px;
+        padding: 40px 40px;
+    }
+
+    .mega-menu-content { gap: 40px; }
+
+    .mega-column h3 { font-size: 15px; }
+    .nav-lvl-3 li a { font-size: 15px !important; }
+
+    /* Secciones */
+    section { padding: 120px 5vw 60px 5vw; }
+
+    /* Hero profile */
+    .profile-layout { gap: 60px; }
+
+    /* Tipografía */
+    .section-subtitle { font-size: 44px; line-height: 42px; }
+    .hero-title { font-size: clamp(32px, 5vw, 64px); }
+
+    /* Footer */
+    .main-footer { padding: 60px 40px 30px 40px; gap: 40px; }
+    .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+
+    .logo-udb { height: 60px; }
+}
+
+/* ============================================================
+   MOBILE  (≤ 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* ---- Header ---- */
+    header {
+        height: 70px;
+        padding: 0px 20px;
+        justify-content: space-between;
+    }
+
+    .header-left { flex: unset; }
+    .header-right { flex: unset; }
+
+    .logo-f1 { height: 30px; }
+
+    /* Mostrar hamburger */
+    .hamburger { display: flex; }
+
+    /* ---- header-center se convierte en el menú desplegable ---- */
+    /* Por defecto: oculto en móvil */
+    .header-center {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0px;
+        width: 100%;
+        height: calc(100svh - 70px);
+        background-color: var(--f1-carbon, #1a1a1a);
+        overflow-y: auto;
+        z-index: 9998;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 32px 24px;
+        border-top: 4px solid var(--f1-red);
+        animation: slideDown 0.3s ease-out;
+    }
+
+    /* Abrir menú cuando el checkbox está activo */
+    .nav-toggle:checked ~ header .header-center { display: flex; }
+
+    /* Lista L1 en móvil: vertical */
+    .nav-lvl-1 {
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+    }
+
+    .nav-lvl-1 > li {
+        height: auto;
+        border-bottom: 1px solid #ffffff15;
+    }
+
+    .nav-lvl-1 a {
+        font-size: 18px;
+        padding: 16px 0px;
+        display: block;
+    }
+
+    /* Mega menú en móvil: siempre visible dentro del panel */
+    .nav-lvl-2 {
+        display: block !important;
+        position: static;
+        background-color: transparent;
+        padding: 0px 0px 16px 16px;
+        border-bottom: none;
+        box-shadow: none;
+        animation: none;
+        width: 100%;
+    }
+
+    .mega-menu-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .mega-column h3 { font-size: 14px; margin-bottom: 12px; }
+    .nav-lvl-3 li a { font-size: 14px !important; padding: 6px 0px !important; }
+
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+    }
+
+    .f1-standings-table th:nth-child(4),
+    .f1-standings-table td:nth-child(4) { display: none; }
+
+    .section-title-standings { margin-bottom: 28px !important; }
+
+    /* ---- Secciones ---- */
+    section {
+        padding: 100px 6vw 60px 6vw;
+        min-height: 100svh;  
+    }
+
+    .snap-container { scroll-snap-type: y proximity; }
+
+    .profile-layout {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .section-subtitle {
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .hero-title {
+        font-size: clamp(22px, 8vw, 48px);
+        line-height: 1.1;
+        text-align: center;
+        word-break: break-word;
+    }
+
+    .main-footer {
+        padding: 50px 20px 24px 20px;
+        gap: 32px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .footer-brand {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .logo-udb { height: 50px; }
+
+    .footer-brand img { width: 110px; }
+
+    .footer-bottom { font-size: 12px; padding-top: 24px; }
+}

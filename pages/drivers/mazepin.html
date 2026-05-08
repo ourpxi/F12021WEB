@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/themes.css">
 </head>
-<body class="theme-haass">
+<body class="theme-haas">
+
+<!-- Toggle CSS-only para el menú hamburger -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
 
 <header>
     <div class="header-left">
@@ -151,7 +154,14 @@
         </nav>
     </div>
 
-    <div class="header-right"></div>
+    <div class="header-right">
+        <!-- Hamburger: solo visible en móvil -->
+        <label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
 </header>
 
     <main class="snap-container">
@@ -175,7 +185,7 @@
         </section>
 
         <section id="history" class="section-dark" style="background-image: linear-gradient(#000000b3, #0000002f), url('../../img/repo/mazepin2.jpg'); background-size: cover; background-position: center;">
-            <div class="profile-layout" style="flex-direction: row-reverse;">
+            <div class="profile-layout profile-layout--reverse">
                 <div class="profile-info">
                     <h2 class="section-title">DESAFÍO EN <br> CADA CURVA</h2>
                     <div class="card-md3 card-glass-light">

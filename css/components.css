@@ -1,3 +1,16 @@
+/* Variante invertida del layout de perfil (imagen a la derecha en desktop) */
+.profile-layout--reverse {
+    flex-direction: row-reverse;
+}
+
+/* Info del piloto dentro del profile-layout */
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 /* Tarjeta default */
 .card-md3 {
     background-color: var(--md-sys-color-surface-variant);
@@ -169,170 +182,6 @@
     color: var(--f1-white);
 }
 
-/* Grid de tres columnas para galería de fotos */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-}
-
-/* Elemento individual de galería con bordes y transición */
-.gallery-item {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 24px;
-    transition: var(--transition);
-    cursor: pointer;
-    border: 2px solid transparent;
-}
-
-/* Efecto hover de galería - escala y borde rojo */
-.gallery-item:hover {
-    transform: scale(1.03);
-    border-color: var(--f1-red);
-}
-
-/* CONTENEDOR GENERAL */
-.contact-container {
-    max-width: 1200px;
-    width: 100%;
-    text-align: center;
-}
-
-/* GRID DEL EQUIPO */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    margin-top: 60px;
-}
-
-/* TARJETA DE CADA INTEGRANTE */
-.team-card {
-    background: var(--f1-carbon);
-    border-radius: 30px;
-    padding: 30px 20px;
-    text-align: center;
-    transition: 0.3s;
-    border: 1px solid #ffffff1a;
-}
-
-/* HOVER */
-.team-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 20px 40px #00000080;
-    border-color: var(--f1-red);
-}
-
-/* IMAGEN */
-.team-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 3px solid var(--f1-red);
-}
-
-/* NOMBRE */
-.team-card h3 {
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-/* ROL */
-.team-card p {
-    color: var(--f1-silver);
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-/* REDES */
-.team-socials {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.team-socials a {
-    text-decoration: none;
-    color: var(--f1-white);
-    font-size: 14px;
-    border: 1px solid #ffffff33;
-    padding: 6px 12px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.team-socials a:hover {
-    background: var(--f1-red);
-    border-color: var(--f1-red);
-}
-
-form {
-    width: 420px;
-    margin: 140px auto 60px auto; /* espacio por el header */
-    padding: 30px;
-    background: var(--f1-carbon);
-    border-radius: 15px;
-    border: 1px solid #ffffff1a;
-    box-shadow: 0 10px 30px #00000080;
-}
-
-/* TÍTULO */
-h2 {
-    text-align: center;
-    margin-top: 120px;
-    font-size: 40px;
-}
-
-/* LABELS */
-form label {
-    font-weight: 500;
-    display: block;
-    margin-top: 10px;
-}
-
-/* INPUTS, TEXTAREA Y SELECT */
-form input,
-form textarea,
-form select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 6px;
-    border-radius: 6px;
-    border: 1px solid var(--f1-red);
-    background: var(--f1-dark);
-    color: var(--f1-white);
-    font-size: 14px;
-}
-
-/* EFECTO FOCUS */
-form input:focus,
-form textarea:focus,
-form select:focus {
-    outline: none;
-    border: 2px solid var(--f1-red);
-}
-
-/* BOTÓN */
-form input[type="submit"] {
-    background: var(--f1-red);
-    border: none;
-    margin-top: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-/* HOVER BOTÓN */
-form input[type="submit"]:hover {
-    opacity: 0.8;
-}
-
 .f1-standings-table { width: 100%; border-collapse: collapse; font-size: 26px; }
 .f1-standings-table thead th { padding: 12px 16px; text-align: left; font-size: 22px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.5); border-bottom: 1px solid rgba(255,255,255,0.15); }
 .f1-standings-table tbody tr { border-bottom: 1px solid rgba(255,255,255,0.08); }
@@ -349,3 +198,225 @@ form input[type="submit"]:hover {
 .badge-gold   { background: #FAD055; color: #7A5A00; font-size: 12px; font-weight: 700; border-radius: 4px; padding: 3px 9px; }
 .badge-silver { background: rgba(255,255,255,0.15); color: #ffffff; font-size: 12px; font-weight: 700; border-radius: 4px; padding: 3px 9px; border: 1px solid rgba(255,255,255,0.25); }
 .badge-bronze { background: #C8824A; color: #fff; font-size: 12px; font-weight: 700; border-radius: 4px; padding: 3px 9px; }
+/* ============================================================
+   RESPONSIVE — components.css
+   Tablet : 769px – 1024px
+   Mobile : ≤ 768px
+   ============================================================ */
+
+/* ---- TABLET ---- */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Tipografía */
+    .hero-title {
+        font-size: clamp(52px, 7vw, 80px);
+        line-height: 1.0;
+        letter-spacing: -1px;
+        margin-bottom: 28px;
+    }
+
+    .section-title {
+        font-size: clamp(36px, 5vw, 56px);
+        line-height: 1.15;
+        margin-bottom: 24px;
+    }
+
+    /* Cards */
+    .card-md3 {
+        padding: 40px;
+        border-radius: 28px;
+        max-width: 100%;
+    }
+
+    .card-md3 p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 32px;
+    }
+
+    .card-team {
+        padding: 40px;
+        border-radius: 28px;
+        max-width: 100%;
+    }
+
+    .card-team p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 32px;
+    }
+
+    /* Logo dentro de card */
+    .card-logo {
+        top: 36px;
+        right: 40px;
+    }
+
+    .card-logo img {
+        width: var(--logo-size, 140px);
+    }
+
+    /* Imágenes — eliminar dimensiones fijas, usar fluidas */
+    .img-xl,
+    .img-glass {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        border-radius: 28px;
+    }
+
+    .img-glass-horizontal {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        aspect-ratio: 2 / 1;
+        border-radius: 28px;
+    }
+
+    /* Info de perfil */
+    .profile-info { flex: 1; }
+
+    /* Botones */
+    .btn-md3 {
+        padding: 16px 36px;
+        font-size: 16px;
+    }
+
+    /* Stats */
+    .stat-number { font-size: 36px; }
+
+    /* Tabla standings */
+    .f1-standings-table { font-size: 16px; }
+    .f1-standings-table thead th { font-size: 14px; padding: 10px 12px; }
+    .f1-standings-table td { padding: 12px 20px; }
+    .f1-bar-bg { width: 100px; }
+}
+
+/* ---- MOBILE ---- */
+@media (max-width: 768px) {
+
+    /* Tipografía */
+    .hero-title {
+        font-size: clamp(28px, 9vw, 52px);
+        line-height: 1.05;
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: clamp(26px, 7vw, 40px);
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+    /* Cards — reducir relleno y redondeo */
+    .card-md3 {
+        padding: 24px 20px;
+        border-radius: 20px;
+        max-width: 100%;
+    }
+
+    .card-md3 p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    .card-team {
+        padding: 24px 20px;
+        border-radius: 20px;
+        max-width: 100%;
+        border-left-width: 6px;
+    }
+
+    .card-team p {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    /* Logo dentro de card: recolocar para no tapar el título */
+    .card-logo {
+        position: static;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 16px;
+    }
+
+    .card-logo img {
+        width: clamp(80px, 30vw, 130px);
+    }
+
+    /* Imágenes — CRÍTICO: quitar dimensiones fijas */
+    .img-xl,
+    .img-glass {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        border-radius: 20px;
+        /* Limitar altura máxima para que no ocupe toda la pantalla */
+        max-height: 60vw;
+        object-fit: cover;
+    }
+
+    .img-glass-horizontal {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border-radius: 20px;
+    }
+
+    /* Botón ancho completo en móvil */
+    .btn-md3 {
+        width: 100%;
+        text-align: center;
+        padding: 16px 24px;
+        font-size: 16px;
+        border-radius: 100px;
+        /* Área de toque mínima de 48px */
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Stats: 2 columnas en móvil, 1 si la pantalla es muy pequeña */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 360px) {
+        .stats-grid { grid-template-columns: 1fr; }
+    }
+
+    .stat-card { padding: 16px 12px; border-radius: 14px; }
+    .stat-number { font-size: 32px; }
+    .stat-label  { font-size: 12px; }
+
+    /* Tabla standings — reducción fuerte */
+    .f1-standings-table { font-size: 13px; }
+    .f1-standings-table thead th {
+        font-size: 11px;
+        padding: 8px 8px;
+        letter-spacing: 0;
+    }
+    .f1-standings-table td { padding: 10px 8px; }
+    .f1-driver-name { font-size: 13px; }
+    .f1-team-label  { font-size: 11px; }
+    .f1-points      { font-size: 13px; padding-right: 8px; }
+    .f1-bar-bg      { width: 60px; }
+
+    /* Perfil de piloto/escudería */
+    .profile-info { text-align: center; }
+
+    /* En móvil, el layout invertido apila igual que el normal */
+    .profile-layout--reverse {
+        flex-direction: column;
+    }
+}

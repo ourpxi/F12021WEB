@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/themes.css">
 </head>
-<body class="theme-alfa">
+<body class="theme-alfa-romeo">
+
+<!-- Toggle CSS-only para el menú hamburger -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
+
 <header>
        <div class="header-left">
         <a href="../../pages/index.html">
@@ -150,7 +154,14 @@
         </nav>
     </div>
 
-    <div class="header-right"></div>
+        <div class="header-right">
+        <!-- Hamburger: solo visible en móvil -->
+        <label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
 </header>
 
 <main class="snap-container">
